@@ -9,7 +9,8 @@ function timeoutPromise(timeout = 1000, value) {
   return new Promise(resolve => setTimeout(resolve, timeout, value))
 }
 
-const listener = LOCAL ? Deno.listen({port, hostname}) : Deno.listenTls({port, hostname})
+// const listener = LOCAL ? Deno.listen({port, hostname}) : Deno.listenTls({port, hostname})
+const listener = Deno.listen({port, hostname})
 for await(const conn of listener) { // for each new TCP connection
   tcpConnectionHandler(conn) // handle it async
 }
