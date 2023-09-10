@@ -1,0 +1,11 @@
+{
+  "imports": {
+    "jose": "https://deno.land/x/jose@v4.14.6/index.ts",
+    "mrmime": "https://deno.land/x/mrmime@v1.0.1/mod.ts",
+    "simple-event-emitter": "https://deno.land/x/simple_event_emitter@1.0.2/simple-event-emitter.js",
+    "simple-websocket-api": "https://deno.land/x/simple_websocket_api@1.0.4/simple-websocket-api.js"
+  },
+  "lint": {
+    "exclude": ["frontend/"]
+  }
+}
